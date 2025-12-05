@@ -1,69 +1,83 @@
 /* ---------- GLOBAL STYLES ---------- */
-
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f7f9;
-    color: #333;
-    text-align: center;            /* Center all text */
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin: 0;
+padding: 0;
+background: #f4f7f9;
+color: #333;
+line-height: 1.6;
 }
 
 h1, h2, h3 {
-    color: #2c3e50;
-    text-align: center;            /* Ensure headings are centered */
+color: #2c3e50;
+text-align: center;
+margin-bottom: 20px;
 }
 
-/* ---------- HEADER & NAVIGATION ---------- */
+a {
+text-decoration: none;
+color: #3498db;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+/* ---------- HEADER & NAV ---------- */
 
 header {
-    background: #3498db;
-    color: white;
-    padding: 20px;
-    text-align: center;            /* Center header content */
-    margin-bottom: 25px;
+background: #3498db;
+color: white;
+padding: 20px 0;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+margin: 0;
+font-size: 2em;
 }
 
 nav {
-    margin-top: 10px;
+margin-top: 10px;
 }
 
 nav a {
-    color: black;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
+color: white;
+font-weight: bold;
+margin: 0 15px;
+padding: 5px 10px;
+border-radius: 5px;
+transition: background 0.3s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
+background: rgba(255,255,255,0.2);
 }
 
-/* ---------- MAIN CONTENT AREA ---------- */
+/* ---------- MAIN CONTENT ---------- */
 
-main, body > center, body > div {
-    width: 90%;
-    max-width: 900px;
-    margin: auto;
-    text-align: center;            /* Center all content inside main */
+main {
+max-width: 900px;
+margin: 30px auto;
+padding: 0 20px;
+}
+
+/* Card layout for forms and tables */
+.card {
+background: white;
+border-radius: 10px;
+padding: 25px;
+margin-bottom: 25px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
 /* ---------- FORMS ---------- */
 
-form {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    max-width: 500px;
-    margin: 0 auto;                /* Center the form block */
-    text-align: center;            /* Center text inside the form */
-}
-
-label {
-    font-weight: bold;
-    display: block;                /* Ensures proper centering */
-    margin-bottom: 5px;
+form label {
+font-weight: bold;
+display: block;
+margin-bottom: 8px;
+text-align: left;
 }
 
 input[type="text"],
@@ -71,71 +85,83 @@ input[type="email"],
 input[type="password"],
 input[type="date"],
 input[type="time"] {
-    width: 90%;                    /* Keep centered */
-    padding: 10px;
-    margin: 8px auto 15px auto;    /* Auto margins center inputs */
-    display: block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+width: 100%;
+padding: 12px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 6px;
+box-sizing: border-box;
+font-size: 1em;
 }
 
 button, input[type="submit"] {
-    background: #3498db;
-    color: white;
-    padding: 10px 18px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-    margin: auto;
+background: #3498db;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+font-weight: bold;
+transition: background 0.3s ease, transform 0.2s ease;
 }
 
 button:hover,
 input[type="submit"]:hover {
-    background: #2e86c1;
+background: #2e86c1;
+transform: translateY(-2px);
 }
 
 /* ---------- TABLES ---------- */
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    background: white;
-    margin: 20px auto;              /* Center table */
-    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
-    text-align: center;             /* Center text inside cells */
+width: 100%;
+border-collapse: collapse;
+margin: 20px 0;
+font-size: 1em;
+background: white;
+box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+table th, table td {
+padding: 12px 15px;
+text-align: center;
 }
 
 table th {
-    background: #3498db;
-    color: white;
-    padding: 10px;
-    text-align: center;             /* Center table headers */
-}
-
-table td {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    text-align: center;             /* Center cell content */
+background: #3498db;
+color: white;
+font-weight: bold;
 }
 
 table tr:nth-child(even) {
-    background: #f2f6f9;
+background: #f2f6f9;
 }
 
-/* ---------- LINKS ---------- */
+/* ---------- FOOTER ---------- */
 
-a {
-    color: #3498db;
+footer {
+background: #2c3e50;
+color: white;
+padding: 15px 0;
+text-align: center;
+margin-top: 40px;
+font-size: 0.9em;
 }
 
-a:hover {
-    text-decoration: underline;
+/* ---------- RESPONSIVE ---------- */
+
+@media screen and (max-width: 600px) {
+nav a {
+display: block;
+margin: 8px 0;
 }
 
-/* ---------- MISC ---------- */
-
-p {
-    line-height: 1.6;
-    text-align: center;
+.card {
+    padding: 15px;
 }
+
+table th, table td {
+    padding: 8px;
+}
+}
+
