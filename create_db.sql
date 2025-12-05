@@ -1,4 +1,4 @@
-- Create database for Clinic Appointment Manager
+-- Create database for Clinic Appointment Manager
 CREATE DATABASE IF NOT EXISTS health;
 USE health;
 
