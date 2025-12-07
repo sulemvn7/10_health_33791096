@@ -31,3 +31,13 @@ CREATE TABLE IF NOT EXISTS login_audit (
     success BOOLEAN NOT NULL,
     ip_address VARCHAR(50)
 );
+
+-- Default user (username: gold, password: smiths)
+INSERT INTO users (username, first, last, email, hashedPassword)
+VALUES (
+    'gold',
+    'Gold',
+    'Smith',
+    'gold@example.com',
+    '$2b$10$Zf2f8okX6wJpVCft56Er/uW.Qr7D5EKOHqMriaDIZLCFwlpQJw/QG'
+);
