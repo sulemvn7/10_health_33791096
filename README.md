@@ -4,7 +4,6 @@ Clinic Appointment Booking App
 
 A web-based system for managing clinic appointments, allowing patients to schedule visits and staff to manage users and track login activity through an audit log.
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Overview
 
 This application is a Node.js web app built with Express that provides:
@@ -17,7 +16,10 @@ Administrators: Track login activity with detailed audit logs.
 
 The app uses MySQL for storing data, EJS for templating, and bcrypt for secure password hashing.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Features
+
 Patient Features
 
 Book Appointments: Schedule appointments with name, email, date, and time.
