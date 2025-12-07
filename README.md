@@ -48,7 +48,7 @@ Connection Pooling: Efficiently manages database connections.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Technologies used
+⚙️Technologies used
 
 Node.js
 
@@ -68,15 +68,15 @@ dotenv: Manages environment variables
 
 💻 Installation
 
-Clone the repository
+1.Clone the repository
 
 git clone <repository-url>
 
-Install dependencies
+2.Install dependencies
 
 npm install
 
-Run node index.js to access application
+3.Run node index.js to access application
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
