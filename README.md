@@ -2,9 +2,9 @@
 
 Clinic Appointment Booking App
 
-A web-based system for managing clinic appointments, allowing patients to schedule visits and staff to manage users and track login activity through an audit log.
+Description
 
-Overview
+A web-based system for managing clinic appointments, allowing patients to schedule visits and staff to manage users and track login activity through an audit log.
 
 This application is a Node.js web app built with Express that provides:
 
