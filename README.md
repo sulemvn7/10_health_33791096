@@ -56,9 +56,11 @@ Express.js
 
 EJS
 
-bcrypt: for password hashing
+MYSQL
 
-MySQL
+HTML/CSS
+
+bcrypt: for password hashing
 
 request: for API calls
 
