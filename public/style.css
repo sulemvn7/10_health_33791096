@@ -1,69 +1,98 @@
 /* ---------- GLOBAL STYLES ---------- */
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f7f9;
-    color: #333;
-    text-align: center;            /* Center all text */
+font-family: 'Poppins', sans-serif;
+background: #f0f8ff; /* Light blue background */
+color: #333;
+line-height: 1.6;
 }
 
-h1, h2, h3 {
-    color: #2c3e50;
-    text-align: center;            /* Ensure headings are centered */
+/* ---------- LINKS ---------- */
+a {
+text-decoration: none;
+color: #ff6f61; /* Vibrant coral */
+font-weight: 500;
+}
+a:hover {
+color: #ff3b2e;
 }
 
 /* ---------- HEADER & NAVIGATION ---------- */
 
 header {
-    background: #3498db;
-    color: white;
-    padding: 20px;
-    text-align: center;            /* Center header content */
-    margin-bottom: 25px;
+background: linear-gradient(90deg, #ff6f61, #ffb347); /* Coral to orange gradient */
+color: white;
+padding: 25px 0;
+box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+header h1 {
+text-align: center;
+font-size: 2.5em;
+font-weight: 700;
 }
 
 nav {
-    margin-top: 10px;
+display: flex;
+justify-content: center;
+margin-top: 15px;
+flex-wrap: wrap;
 }
 
 nav a {
-    color: black;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
+margin: 5px 15px;
+padding: 10px 20px;
+background: #ff6f61;
+border-radius: 8px;
+color: white;
+transition: all 0.3s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
+background: #ff3b2e;
+transform: translateY(-2px);
 }
 
-/* ---------- MAIN CONTENT AREA ---------- */
+/* ---------- MAIN CONTENT ---------- */
 
-main, body > center, body > div {
-    width: 90%;
-    max-width: 900px;
-    margin: auto;
-    text-align: center;            /* Center all content inside main */
+main {
+max-width: 1000px;
+margin: 30px auto;
+padding: 0 20px;
+}
+
+/* ---------- CARD LAYOUT ---------- */
+
+.card {
+background: white;
+border-radius: 15px;
+padding: 25px;
+margin-bottom: 30px;
+box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+transform: translateY(-7px);
+box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
 /* ---------- FORMS ---------- */
 
 form {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    max-width: 500px;
-    margin: 0 auto;                /* Center the form block */
-    text-align: center;            /* Center text inside the form */
+display: flex;
+flex-direction: column;
+gap: 18px;
 }
 
 label {
-    font-weight: bold;
-    display: block;                /* Ensures proper centering */
-    margin-bottom: 5px;
+font-weight: 600;
+text-align: left;
 }
 
 input[type="text"],
@@ -71,71 +100,90 @@ input[type="email"],
 input[type="password"],
 input[type="date"],
 input[type="time"] {
-    width: 90%;                    /* Keep centered */
-    padding: 10px;
-    margin: 8px auto 15px auto;    /* Auto margins center inputs */
-    display: block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+padding: 14px;
+border-radius: 10px;
+border: 2px solid #ff6f61;
+font-size: 1em;
+transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+input:focus {
+border-color: #ff3b2e;
+box-shadow: 0 0 8px rgba(255, 111, 97, 0.5);
 }
 
 button, input[type="submit"] {
-    background: #3498db;
-    color: white;
-    padding: 10px 18px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-    margin: auto;
+padding: 14px 25px;
+border: none;
+border-radius: 12px;
+background: linear-gradient(90deg, #ff6f61, #ffb347);
+color: white;
+font-weight: 700;
+cursor: pointer;
+transition: all 0.3s ease;
 }
 
-button:hover,
-input[type="submit"]:hover {
-    background: #2e86c1;
+button:hover, input[type="submit"]:hover {
+background: linear-gradient(90deg, #ff3b2e, #ff6f61);
+transform: translateY(-3px);
 }
 
 /* ---------- TABLES ---------- */
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    background: white;
-    margin: 20px auto;              /* Center table */
-    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
-    text-align: center;             /* Center text inside cells */
+width: 100%;
+border-collapse: collapse;
+margin: 25px 0;
+background: white;
+border-radius: 15px;
+overflow: hidden;
+box-shadow: 0 8px 18px rgba(0,0,0,0.08);
 }
 
-table th {
-    background: #3498db;
-    color: white;
-    padding: 10px;
-    text-align: center;             /* Center table headers */
+th, td {
+padding: 15px;
+text-align: center;
 }
 
-table td {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    text-align: center;             /* Center cell content */
+th {
+background: linear-gradient(90deg, #ff6f61, #ffb347);
+color: white;
+font-weight: 600;
 }
 
-table tr:nth-child(even) {
-    background: #f2f6f9;
+tr:nth-child(even) {
+background: #fff0f0; /* Light coral stripe */
 }
 
-/* ---------- LINKS ---------- */
+/* ---------- FOOTER ---------- */
 
-a {
-    color: #3498db;
+footer {
+background: #ff6f61;
+color: white;
+text-align: center;
+padding: 20px 0;
+margin-top: 40px;
+font-size: 0.95em;
 }
 
-a:hover {
-    text-decoration: underline;
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+@media screen and (max-width: 768px) {
+nav {
+flex-direction: column;
+}
+table th, table td {
+padding: 12px;
+}
+.card {
+padding: 20px;
+}
 }
 
-/* ---------- MISC ---------- */
-
-p {
-    line-height: 1.6;
-    text-align: center;
+@media screen and (max-width: 480px) {
+header h1 {
+font-size: 2em;
+}
+button, input[type="submit"] {
+width: 100%;
+}
 }
