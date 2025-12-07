@@ -56,7 +56,7 @@ Express.js
 
 EJS
 
-MYSQL
+MySQL
 
 HTML/CSS
 
