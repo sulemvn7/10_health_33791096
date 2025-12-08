@@ -35,9 +35,10 @@ router.post('/book', (req, res) => {
 });
 
 // Show search form
-router.get('/search', (req, res) => {
+router.get('/search', redirectLogin, (req, res) => {
     res.render('search_appointments');
 });
+
 
 // Handle search
 router.post('/search', (req, res) => {
