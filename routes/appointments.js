@@ -19,9 +19,10 @@ const loginLimiter = rateLimit({
 });
 
 // Show booking form
-router.get('/book', (req, res) => {
+router.get('/book', redirectLogin, (req, res) => {
     res.render('book_appointment');
 });
+
 
 // Handle booking form submission
 router.post('/book', (req, res) => {
