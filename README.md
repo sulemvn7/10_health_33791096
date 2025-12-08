@@ -28,11 +28,9 @@ View Appointments: Display all scheduled appointments in a table.
 
 Search Appointments: Search appointments by patient name.
 
-Staff Features
-
 Secure Authentication: Login with bcrypt-hashed passwords.
 
-User Registration: Add new staff accounts.
+User Registration: Add new accounts.
 
 Audit Log Access: View login attempts, timestamps, and IP addresses.
 
