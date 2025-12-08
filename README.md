@@ -16,33 +16,6 @@ Administrators: Track login activity with detailed audit logs.
 
 The app uses MySQL for storing data, EJS for templating, and bcrypt for secure password hashing.
 
-10_health_33791096/
-├── index.js                    # Main application entry point
-├── package.json                # Dependencies and project metadata
-├── create_db.sql               # Database schema creation script
-├── insert_test_data.sql        # Test data insertion script
-├── links.txt                   # Deployment URLs
-├── report.pdf                  # Project documentation
-├── README.md                   # This file
-│
-├── routes/
-│   └── index.js                 # Route handlers for appointments and auth
-│   └── appointments.js 
-|   └── auth.js 
-|   └── api.js                   #API data
-├── views/
-│   ├── layout.ejs               # Home page
-│   ├── about.ejs               # About page
-│   ├── login.ejs               # Login page
-│   ├── register.ejs            # User registration page
-│   ├── book_appointment.ejs    # Book appointment form
-│   ├── appointment_list.ejs    # List all appointments
-│   ├── search_appointments.ejs  # Search appointments
-│   └── audit.ejs           # Login audit log
-│
-└── public/
-        └── style.css           # Application styles
-
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Features
