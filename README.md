@@ -8,11 +8,11 @@ A web-based system for managing clinic appointments, allowing patients to schedu
 
 This application is a Node.js web app built with Express that provides:
 
-Patients: Book, view, and search appointments.
+Book, view, and search appointments.
 
-Staff: Secure login and user management.
+Secure login and user management.
 
-Administrators: Track login activity with detailed audit logs.
+Track login activity with detailed audit logs.
 
 The app uses MySQL for storing data, EJS for templating, and bcrypt for secure password hashing.
 
